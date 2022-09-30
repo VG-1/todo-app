@@ -30,10 +30,10 @@ const AddTodo = ({addTodo}) => {
   }
   
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}  class="addTodo">
       <HStack mt='8'>
-        <Input variant='filled' placeholder='Learning React' value={content} onChange={(e) => setContent(e.target.value)} />
-        <Button type='submit' colorScheme='cyan' px='8'>Add Todo</Button>
+        <Input variant='filled' placeholder='Learning React'  value={content} onChange={(e) => setContent(e.target.value)} />
+        <Button type='submit' className="SubmitButton" colorScheme='cyan' px='8'>Add Todo</Button>
       </HStack>
     </form>
   );
